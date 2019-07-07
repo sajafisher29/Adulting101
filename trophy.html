@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Push It Real Good (Final Project) - Trophies!</title>
+  <link rel='icon' href='./assets/favicon.ico' type='image/x-icon' />
+  <link rel="stylesheet" href="./stylesheets/reset.css" />
+  <link rel="stylesheet" href="./stylesheets/header.css" />
+  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="./stylesheets/trophy.css" />
+  <link rel="stylesheet" href="./stylesheets/footer.css" />
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+
+
+  <header>
+    <h1 id="headerUserName">Adulting 101 - John's Trophies!</h1>
+    <nav>
+      <ul>
+        <a href="./home.html">
+          <li>Home</li>
+        </a>
+        <a href="./trophy.html">
+          <li>Trophies</li>
+        </a>
+        <a href="./about-us.html">
+          <li>About Us</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container" id="CardDeck">
+    </div>
+    <div class="status" id="StatTitle">
+      <h2><span class="userName"></span>'s Adulting Status: xx%</h2>
+    </div>
+
+    <div class="chart">
+      <div class="baby"><i class="fa fa-baby"></i></div>
+      <div class="bar">
+        <canvas id="myChart" height="40"> </canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+      </div>
+      <div class="adult"><i class="fa fa-child"></i></div>
+    </div>
+
+  </main>
+
+  <footer class="trophyFooter">
+
+    <p> &copy; 2019 .PushIt(RealGood)</p>
+
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/trophy.js"></script>
+</body>
+
+</html>

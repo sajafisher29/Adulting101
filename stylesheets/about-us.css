@@ -1,0 +1,132 @@
+/* FLIP CARD CSS FOR ABOUT US */
+
+/* THE MAIN CONTAINER HOLDS EVERYTHING */
+
+.container {
+    /* position: absolute; */
+    display: inline-block;
+    background: none;
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    margin: auto;
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+
+.flip-container {
+    margin: 25px;
+    height: 450px;
+    top: 0;
+    left: 0;
+    width: 21%;
+    border-radius: 10px;
+    border-color: black;
+    transform-style: preserve-3d;
+    transition-property: all;
+    transition-duration: 1.0s;
+    transition-timing-function: cubic-bezier(0.9, 0.04, 0.74, 0.99);
+    transition-delay: 0s;
+    box-shadow: 0px 7px 15px 1px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    object-fit: contain;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.flip-container:hover {
+    transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+
+.front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    opacity: .75;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    background: #FFFAFA;
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.front h2,
+.back h2 {
+    padding: 30px 0 0 0;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+.front p,
+.back p {
+    padding: 0 30px;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+/* TODO: MAKE SHOW CLICK FUNCTION INSTEAD OF MOUSEOVER */
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #FFFAFA;
+    opacity: .60;
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    /* color: #333; */
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+div.gina>.front {
+    float: left;
+    background-image: url(../assets/gina_about_me.png);
+    background-size: cover;
+    background-position: center;
+}
+
+div.jon>.front {
+    float: right;
+    background-image: url(../assets/jon_about_me.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div.lyndsey>.front {
+    float: left;
+    background-image: url(../assets/lyndsey_about_me_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div.sarah>.front {
+    float: right;
+    background-image: url(../assets/sarah_about_me.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+.aboutUsFooter {
+    margin-top: 50px;
+}

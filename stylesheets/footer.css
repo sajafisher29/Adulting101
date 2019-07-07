@@ -1,0 +1,23 @@
+footer {
+    display: inline-block;
+    margin: 10em auto;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+footer>p {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+}
+
+.trophyFooter {
+    margin: 2em;
+}
+
+.indexFooter {
+    margin-top: 60px;
+}
